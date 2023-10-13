@@ -1,0 +1,12 @@
+rsync -avzPr --ignore-existing dev_media/cms/page/11/ media/cms/page/11
+rsync -avzPr --ignore-existing dev_media/cms/page/163/ media/cms/page/163
+rsync -avzPr --ignore-existing dev_media/cms/page/164/ media/cms/page/164
+rsync -avzPr --ignore-existing dev_media/cms/page/165/ media/cms/page/165
+rsync -avzPr --ignore-existing dev_media/cms/page/166/ media/cms/page/166
+rsync -avzPr --ignore-existing dev_media/cms/page/167/ media/cms/page/167
+rsync -avzPr --ignore-existing dev_media/cms/page/169/ media/cms/page/169
+rsync -avzPr --ignore-existing dev_media/cms/page/170/ media/cms/page/170
+rsync -avzPr --ignore-existing dev_media/cms/page/265/ media/cms/page/250
+rsync -avzPr --ignore-existing dev_media/cms/page/266/ media/cms/page/251
+rsync -avzPr --ignore-existing dev_media/cms/page/267/ media/cms/page/252
+rsync -avzPr --ignore-existing dev_media/cms/page/268/ media/cms/page/253
