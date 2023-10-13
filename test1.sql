@@ -32,11 +32,27 @@ set b.title = t.title,
  b.content_text = t.content_text,
  b.page_header_render = t.page_header_render,
  b.news_date = t.news_date,
- b.news_type = t.news_type,
  b.display_mode = t.display_mode,
  b.news_sort_direction = t.news_sort_direction,
  b.news_redirect_url = t.news_redirect_url
- b.grid_title = t.grid_title,
- b.grid_description = t.grid_description
 where t.identifier in ('sound-attenuation', 'bekiporr-food-and-beverage-filter-media', 'bekiporr-hepa-ulpa-filter-media', 'bekiporr-hepa-ulpa-medical-filter-media', 'bekiporr-hot-gas-filter-media', 'hydraulic-oil-filter-felt', 'catalyst-substrates', 'coalescing-demisting', 'exhaust-filtration-media', 'fuel-and-lube-oil-filtration-media', 'inkjet-filtration-media', 'polymer-filtration-media');
+
+
+
+---------+---------+
+| page_id | page_id |
++---------+---------+
+|      11 |      11 |
+|     163 |     163 |
+|     164 |     164 |
+|     165 |     165 |
+|     166 |     166 |
+|     167 |     167 |
+|     169 |     169 |
+|     170 |     170 |
+|     265 |     250 |
+|     266 |     251 |
+|     267 |     252 |
+|     268 |     253 |
++---------+---------+
 
