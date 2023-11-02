@@ -1,0 +1,3 @@
+products-applications/basic-materials/textile/conductive-fibers-and-yarns-for-smart-textiles
+
+smarttextiles
