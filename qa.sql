@@ -5,7 +5,7 @@ set b.title = t.title,
  b.meta_keywords = t.meta_keywords,
  b.meta_description = t.meta_description,
  b.content_heading = t.content_heading,
- b.content = t.content,
+ b.content = REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(t.content,'378','357'),'374','367'),'379','355'),'380','356'),'381','358'),'390','361'),'387','359'),
  b.creation_time = t.creation_time,
  b.update_time = t.update_time,
  b.is_active = t.is_active,
@@ -38,4 +38,7 @@ set b.title = t.title,
  b.news_redirect_url = t.news_redirect_url,
  b.grid_title = t.grid_title,
  b.grid_description = t.grid_description
-where t.identifier in ("sustainability","protect-the-planet","you-know-watt","put-people-first","river-clean-up","ehs","act-with-integrity","annual-report/2022","message-from-the-chairman-and-the-ceo","stories","legal-and-compliance","sustainability-standards","reports","policies");
+where t.identifier in ('act-with-integrity','annual-report/2022','ehs','legal-and-compliance','message-from-the-chairman-and-the-ceo','policies','protect-the-planet','put-people-first','reports','river-clean-up','stories','sustainability','sustainability-standards','you-know-watt');
+7. 更新媒体文件
+
+rsync -avzPr --ignore-existing dev_media/wysiwyg/ media/wysiwyg
