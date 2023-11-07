@@ -1,3 +1,4 @@
-https://qa.bekaert.cn/products-applications/basic-materials/textile/conductive-fibers-and-yarns-for-smart-textiles
+bekaertprojects@vs-ssh.visualstudio.com:v3/bekaertprojects/Digital%20Commerce/china-bkt-cwr-vsf-code
 
-smarttextiles
+
+bekaertprojects@vs-ssh.visualstudio.com:v3/bekaertprojects/Digital%20Commerce/china-bkt-cwr-magento-code
