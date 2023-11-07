@@ -2,3 +2,8 @@ bekaertprojects@vs-ssh.visualstudio.com:v3/bekaertprojects/Digital%20Commerce/ch
 
 
 bekaertprojects@vs-ssh.visualstudio.com:v3/bekaertprojects/Digital%20Commerce/china-bkt-cwr-magento-code
+
+
+cms_page
+
+magento_versionscms_hierarchy_node
