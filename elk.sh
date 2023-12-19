@@ -5,4 +5,4 @@ echo "deb [signed-by=/usr/share/keyrings/elastic.gpg] https://artifacts.elastic.
 
 sudo apt update
 
-
+rsync -avzPr --ignore-existing dev_media/wysiwyg/ media/wysiwyg

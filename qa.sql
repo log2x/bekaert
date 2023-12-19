@@ -6,9 +6,11 @@ set b.title = t.title,
  b.meta_description = t.meta_description,
  b.content_heading = t.content_heading,
  b.content = IF(@c1=REGEXP_SUBSTR(t.content, 'page_ids=".*?"'), 
- replace(t.content, @c1,
- replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(@c1, "373","379"), "374", "380"),"377","378"),"388","417"),"389","456"),"392","421"),"401", "393"),"403","394"),"404","395"),"405","396"),"406","397"))
- , t.content),
+ replace(
+    replace(t.content, @c1,
+ replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(@c1, "397","409"), "396", "410"),"395","371"),"394","408"),"393","407"),"421","394"),"456", "396"),"417","395"),"378","357"),"380","356"),"379","355"))
+ , "qa-api.bekaert.cn", "api.bekaert.cn")
+ , replace(t.content, "qa-api.bekaert.cn", "api.bekaert.cn")),
  b.creation_time = t.creation_time,
  b.update_time = t.update_time,
  b.is_active = t.is_active,
@@ -42,6 +44,3 @@ set b.title = t.title,
  b.grid_title = t.grid_title,
  b.grid_description = t.grid_description
 where t.identifier in ("innovation","tire-tech-award","creativity-beyond-steel","our-core-competencies","engineering","research---development","steel-wire-transformation","coating-technologies","wire-rod","cold-rolling-steel","wire-drawing","thermal-treatment","cord-making","textile-technologies","metal-fiber-production-products","welding-mesh-production","profiling","hot-dip","electro-deposition","cladding","extrusion-of-polymers","lacquering","powder-coating","careers","the-hiring-process","digital-opportunities","graduates","why-join-us","preparation-tips","application-process","program-overview","working-in-production","operators","technicians","business-2023","news-20231015iblac","business-5-20230203newlogolaunch","business-5-20230516sustainabilityday","business-5-20230911yudaming","business-5-20230224sustainable","business-5-20230331cbscgreenplant","business-5-20230116acinjy","business-5","news-20230925","alupower-64d3265abef25","alupower","union-news-20230705actradeshow","union-news-20230622-655489cf3a79e","union-news-20230308womensdaycelebration","union-news-20230527bstcchildrensday","union-news-20230601bapbbscchildrenday","union-news-20230525bbscagilebuddygroup","union-news-20230610bbscsustainabilitydaywithchildren","news-20230427bapcampusvisit","news-20230915-steelrosenews","news-202306employeeclub","upcoming-exhibition-20230810","news-upcoming-exhibition-1","find-a-job");
-
-rsync -avzPr --ignore-existing dev_media/wysiwyg/ media/wysiwyg
-
